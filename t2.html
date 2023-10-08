@@ -4,8 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <style>*{margin: 0;
+        padding: 0;
+        box-sizing: 0;
+       font-family: Arial, Helvetica, sans-serif}
+
+        .banner
+        {background-color: aliceblue;
+         height: 100vh;
+         width: 100%;
+         position: relative;
+ 
+       
+        
+       }
+       .navbar{
+        height: 80px;width: 100%;
+        background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);;
+
+        display: flex;
+        align-items: center;
+        position: fixed;
+
+        justify-content: space-around;
+
+        
+       }
+       .navbar h1
+       {cursor: pointer;
+        color:aliceblue;
+        font-weight: bold;
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+       }
+
+       .banner  .navbar ul{
+        display: flex;
+        justify-content: space-around;
+       }
+
+       .navbar ul li{
+        list-style-type: none;
+        margin: 0 20px;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        
+        
+       }
+       .navbar ul li a{text-decoration: none;color: aliceblue;}
+       .content .content1{
+        height: 400px;
+        width: 100%; 
+        background-color: dodgerblue;
+        text-align: center;
     
+       }
+       .content .content1 h1{
+        font-size: 40px; 
+         color: aliceblue;
+         text-align: center;
+         letter-spacing: 2px;
+        padding-top: 150px;}
+       .content .content1 p{font-size: 20px; color: aliceblue; text-align: center;padding: 20px;}
+       .content .content1 input{
+        color: blue;
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+        background-color: aliceblue; 
+    border-radius: 20px;}
+
+    .content .content1  input:hover {
+        background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);;
+    /* Düymənin arxa planını hover zaman dəyişdirir */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    /* Düymənin üzünən kölge əlavə edir hover zaman */
+    transform: scale(1.1);
+    /* Düymənin ölçüsünü böyüdürür hover zaman */
+}
+.section{height: 500px;width: 100%;
+     background-color: lightgreen;
+     display: flex;
+     justify-content: center;
+     
+}
+.section .section1 {  padding-top: 10%; 
+    padding-left: 10%;; width: 70%;}
+.section .section1 h1{ font-size: 40px; margin-bottom: 20px;}
+.section .section1 p{font-size: 20px;margin-bottom: 15px;overflow: hidden;
+
+}
+.section  .section1 li {list-style-position: inside; font-weight: bold; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.section2{height: 400px; width: 100%;
+    background-color:bisque; 
+    display:
+      flex;
+     justify-content: center;}
+.section2 .sec2{ width: 70%; padding-top: 10%; padding-left: 10%; }
+.section2 .sec2 h1{overflow: hidden; margin-bottom: 20px;}
+.section2 .sec2 p{font-size: 20px;}
+.section3{height: 400px; width: 100%;
+    background-color:royalblue; 
+    display:
+      flex;
+     justify-content: center;}
+.section3 .sec3{ width: 70%; padding-top: 10%; padding-left: 10%; ;}
+.section3 .sec3 h1{overflow: hidden; margin-bottom: 20px;}
+.section3 .sec3 p{font-size: 20px;}
+
+.footer{
+    display:flex;
+     justify-content: center;height: 100px;width: 100%;background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%) ;}
+.footer div {width: 70%; padding-top: 50px; padding-left: 150px;display: flex;justify-content: center; }
+.footer div h1{
+    overflow: hidden; 
+    margin-bottom: 20px; color:
+     aliceblue; font-size: 20px;}  
+    </style>
+
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <h1>Start Bootstrap</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <h1>Welcome to Scrolling Nav</h1>
+                <p>A functional Bootstrap 5 boilerplate for one page scrolling websites</p>
+                <input type="submit" value="Start scrolling!">
+            </div>
+
+
+        </div>
+
+        <div class="section">
+            <div class=" section1">
+            <h1>About this page</h1>
+            <p>This is a great place to 
+                talk about your webpage. 
+                This template is purposefully 
+                unstyled so you can use it as boilerplate or 
+                starting point for you own 
+                landing page designs! This
+                 template features:</p>
+
+                 <ul>
+                    <li>Clickable nav links that smooth scroll to page sections</li>
+                    <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+                    <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+                    <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+                 </ul>
+
+
+        </div>
+
+        </div>
+        <div class="section2">
+        <div class="sec2">
+           <h1>Services we offer</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. 
+            Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+        </div>
+        </div>
+
+        <div class="section3">
+            <div class="sec3">
+            <h1>Contact us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt,
+                qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            </div>
+
+           
+        </div>
+
+        <div class="footer">
+        <div>
+            <h1>Copyright © Your Website 2023</h1>
+        </div>
+        
+            </div>
+
+
+
+
+
+ 
+
+
+
+    </div>
 </body>
 </html>
